@@ -1,72 +1,86 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>My Portfolio</title>
     <style>
-      /* Add your CSS styles here */
-      .header {
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      nav a {
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      nav a:hover {
+        color: white;
+        background-color: #333;
+      }
+
+      section {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      footer {
         background-color: #333;
         color: white;
         text-align: center;
-        padding: 10px;
-      }
-      .header h1 {
-        margin: 0;
-      }
-      .section {
-        background-color: #f2f2f2;
-        padding: 10px;
-      }
-      .project {
-        background-color: white;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        border-radius: 5px;
-        margin: 10px;
-        display: inline-block;
-        width: 30%;
-      }
-      .project:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-      }
-      .project h3 {
-        margin: 0;
-        padding: 10px;
-        background-color: #333;
-        color: white;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-      }
-      .project p {
-        padding: 10px;
+        padding: 20px;
       }
     </style>
   </head>
   <body>
-    <div class="header">
-      <h1>My Portfolio</h1>
-    </div>
-    <div class="section">
+    <header>
+      <h1>Javier Morales</h1>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+    <section>
       <h2>About Me</h2>
-      <p>
-        Hi, my name is [Your Name] and I am a [Your Title]. I have experience in [Your Skills].
-      </p>
-    </div>
-    <div class="section">
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>
-          Description of project 1.
-        </p>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>
-          Description of project 2.
-        </p>
-      </div>
-      <!-- Add more projects as needed -->
-    </div>
+      <p>Insert a brief description.</p>
+    </section>
+    <section>
+      <h2>Portfolio</h2>
+      <ul>
+        <li><a href="#">Project 1</a></li>
+        <li><a href="#">Project 2</a></li>
+        <li><a href="#">Project 3</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact Me</h2>
+      <p>Insert contact form or information here.</p>
+    </section>
+    <footer>
+      <p>&copy; 2023 Morales</p>
+    </footer>
   </body>
 </html>
